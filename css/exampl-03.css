@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{margin: 0;}
+h1{background-color: cadetblue;
+margin: 0 0 50px 0;}
+.member{
+    box-sizing: border-box;
+    width: 500px;
+    border: 10px solid blue;
+    padding: 0 100px;
+    margin: 80px auto o auto;
+    background-color: chartreuse;}
