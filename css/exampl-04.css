@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{margin: 0;}
+.container{
+    width: 850px; 
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid blue; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+
+}
+    /* flex-wrap: wrap;
+    flex-direction: row;} */
+.box{
+    height: 150px;
+    margin-bottom: 15px;
+    width: 200px;
+}
+.box:nth-last-child(odd){
+    background-color: blueviolet;
+}
+.box:nth-last-child(even){
+    background-color: brown;
+}
+.box1{order: 1;}
+.box8{order: -1;}
