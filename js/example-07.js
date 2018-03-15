@@ -1,7 +1,7 @@
 $(document).ready(function(){
     console.log(1);
     var box1 = $('.box1');
-    var btn = $('btn');
+    var btn = $('.btn');
 
     btn.on('click', function(){
         box1.toggleClass('box-act');
