@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body{margin: 0;}
+.container{
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: "box box box box";
+    grid-auto-columns: 20%;
+    grid-auto-rows: 100px;
+    /* grid-gap: 20px; */
+    justify-content: space-between;
+    grid-row-gap: 30px;
+}
+.box:nth-child(odd){
+    background-color: coral;}
+.box:nth-child(even){
+    background-color: greenyellow;
+}
+.box2{
+    grid-row-start: 2;
+    grid-auto-columns: 2;
+}
+.box8{
+    order:-1;
+}
