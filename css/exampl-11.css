@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    /* height: 100vh; */
+    /* background-color: darkgray;
+    background-image: url("../images/1.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 500px 300px;
+    background-attachment: fixed; */
+    /* background: rgb(34, 255, 0) url("../images/1.jpg") no-repeat 50% 0 /500px 350px fixed; */
+    /* background-color: darkgoldenrod; */
+    /* background-image: url("../images/profile.png"), linear-gradient(to bottom, red 0%, green 100%); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 50px 50px, 0 0; 컴마 단위로 개별적으로 대응 */
+    /* background-size: 200px 200px; */
+    /* background-attachment: fixed; */
+    background: url("../images/profile.png") no-repeat 50px 50px / 200px 200px fixed,linear-gradient(to bottom, wheat 0%,salmon 100%) repeat 0 0 /cover fixed;
+    background-color: greenyellow;
+    /* 백그라운드 컬러는 속기법 뒤에 . 폴백 (에러가 나도 기본값을 어떻게 처리할 것이냐)*/
+}
