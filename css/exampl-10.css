@@ -1,0 +1,37 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+}
+div{
+    background-color: blueviolet;
+}
+    
+h1{
+    background-color: aquamarine;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+h2{
+    box-shadow: 5px 5px 2px 0 cadetblue;
+    background-color: coral;
+}
+.box{
+    background-color: crimson;
+    height: 200px;
+    width: 500px;
+    position: relative;
+}
+h3{
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+span{
+    background-color: darkgreen;
+    width: 100px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
