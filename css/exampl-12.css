@@ -44,6 +44,7 @@ body{
 .ad{
     color: #fff;
     font-size: 3em;
+    min-height: 500px;
     /* display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -53,7 +54,7 @@ body{
     position: sticky;
     top:100px;
     text-align: right;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
 }
 /* 메인공통 */
@@ -65,8 +66,63 @@ body{
     background-color: #181818;
     color:#fff;
 }
+/* 모바일 스몰 디바이스 */
+@media screen and (min-width:1px)and (max-width:550px){
+    /*모바일 small 로고 */
+    .logo{
+        background-color: beige;
+        width: 50%;
+        margin-left: 1em;
+    }
+    /*모바일 small 메뉴 */
+    .btn-wrapper{
+        background-color: blanchedalmond;
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        width: 40px;
+        height: 40px;
+    }
+    .btn-menubar{
+        display: none;
+    }
+    .menubar{
+        position: absolute;
+        display: block;
+        background:#181818;
+        border-radius: 10px;
+        width: 100%;
+        height: 25%;
+    }
+    .menubar-top{
+        top: 0;
+    }
+    .menubar-middle{
+        top: 50%;
+        transform: translateY(50%);
+    }
+    .menubar-bottom{
+        top: 100%;
+        transform: translateY(-100%);
+    }
+    .menu{
+        background: rgba(0, 0, 0,.85);/* 반투명 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        z-index: 10;
+        color: #fff;
+        padding: 3em 0 0 2em;
+        transform: translateX(-100%); /* 일단은 숨겨놓고 버튼을 누르면 나오도록. left를 음수로 설정할 수 있지만 이건 느림  */
+    }
+    .menu-act{
+        transform: translateX(0%);
+    }
+}
 /* 모바일 디바이스 */
-@media screen and (max-width:999px){
+@media screen and (min-width:551px) and (max-width:999px){
     /* 모바일로고 */
     .logo{
         width: 50%;
