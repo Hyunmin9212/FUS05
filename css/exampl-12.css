@@ -70,23 +70,30 @@ body{
 @media screen and (min-width:1px)and (max-width:550px){
     /*모바일 small 로고 */
     .logo{
-        background-color: beige;
-        width: 50%;
-        margin-left: 1em;
+        /* background-color: beige; */
+        width: 35%;
+        margin-left: 2em;
     }
     /*모바일 small 메뉴 */
     .btn-wrapper{
-        background-color: blanchedalmond;
+        /* background: blanchedalmond; */
         position: fixed;
         top: 1em;
         right: 1em;
         width: 40px;
         height: 40px;
+        overflow: hidden;
     }
     .btn-menubar{
-        display: none;
+        border:0;
+        background: transparent;
+        padding: 0;
+        color: rgba(0, 0,0, 0);
+        cursor: pointer;
+        /* 버튼은 브라우저마다 기본모양이 다르당. 위는 일다 다 안보이게 속성 없앤거*/
     }
     .menubar{
+        cursor: pointer;
         position: absolute;
         display: block;
         background:#181818;
@@ -97,13 +104,24 @@ body{
     .menubar-top{
         top: 0;
     }
+    .menubar-act.menubar-top{
+        transform: translateY(-50%) rotate(45deg);  /* 이건 이동하는 순서를 생각해야 함. */
+        top: 50%;
+    }
     .menubar-middle{
         top: 50%;
-        transform: translateY(50%);
+        transform: translateY(-50%);
+    }
+    .menubar-act.menubar-middle{
+        transform: translate(-100%, -50%);
     }
     .menubar-bottom{
         top: 100%;
         transform: translateY(-100%);
+    }
+    .menubar-act.menubar-bottom{
+        transform: translateY(-50%) rotate(-45deg);
+        top: 50%;
     }
     .menu{
         background: rgba(0, 0, 0,.85);/* 반투명 */
@@ -116,6 +134,7 @@ body{
         color: #fff;
         padding: 3em 0 0 2em;
         transform: translateX(-100%); /* 일단은 숨겨놓고 버튼을 누르면 나오도록. left를 음수로 설정할 수 있지만 이건 느림  */
+        transition: all 300ms;
     }
     .menu-act{
         transform: translateX(0%);
