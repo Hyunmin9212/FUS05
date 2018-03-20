@@ -18,8 +18,8 @@ img{
     /* 위 두가지가 이미지 반응형 설정 */
 }
 /* 숨김컨텐츠 */
-.readerble-hidden{
-    background-color: dodgerblue;
+.readable-hidden{
+    /* background-color: dodgerblue; */
     /* display: none; 이라면 안읽힘. */
     position: absolute;
     /* left: -9999em;
@@ -32,6 +32,39 @@ img{
     clip: rect(0,0,0,0); /* 앱솔루트 상태여야 함 */ 
     /* 이러한 자주 쓸 듯한 패턴은 남기기 */
 }
+body{
+    background:url("../images/1.jpg") no-repeat 0 0/cover fixed;
+}
+/* 헤더공통 */
+.header{
+    background: #FFF;
+    z-index: 10;
+}
+/* 광고공통 */
+.ad{
+    color: #fff;
+    font-size: 3em;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1em; */ /* 플렉스박스로 글자 가운데 아래 배치 */
+}
+.ad-content{
+    position: sticky;
+    top:100px;
+    text-align: right;
+    text-transform: uppercase;
+
+}
+/* 메인공통 */
+.main{
+    background-color: #fff;
+}
+/* 푸터공통 */
+.footer{
+    background-color: #181818;
+    color:#fff;
+}
 /* 모바일 디바이스 */
 @media screen and (max-width:999px){
     /* 모바일로고 */
@@ -41,13 +74,14 @@ img{
     }
     /* 모바일 메뉴 */
     .menu{
-        background-color: rgb(60, 48, 230);
+        /* background-color: rgb(60, 48, 230); */
         padding: 1em;
         display: flex;
         justify-content: space-around;
     }
     .menu a{
-        background-color: rgb(200, 255, 20);
+        display: block;
+        /* background-color: rgb(200, 255, 20); */
         padding: 1em;
         text-transform: uppercase;
     }
@@ -62,10 +96,10 @@ img{
         justify-content: space-around; */
         display: grid;
         grid-template-areas: "logo    menu";
-        background-color: rgb(238, 255, 0);
+        /* background-color: rgb(238, 255, 0); */
         align-items: center;
         padding: 1em 2em ;
-        position: fixed;
+        position: sticky;
         width: 100%;
         top: 0;
         left: 0;
@@ -74,14 +108,14 @@ img{
     .logo{
         grid-area: logo;
         width: 20%;
-        background-color: deeppink;
+        /* background-color: deeppink; */
 
     }
     /* 데탑메뉴 */
         .menu{
             grid-area:  menu;
             display: flex;
-            background-color: darkturquoise;
+            /* background-color: darkturquoise; */
         }
         .menu a{
             display: block;
@@ -95,15 +129,15 @@ img{
             content: "";
         }
         .ad{
-            background-color: rgb(226, 226, 226);
+            /* background-color: rgb(226, 226, 226); */
             height: 50vh;
         }
         .main{
-            background-color: rgb(68, 0, 255);
+            /* background-color: rgb(68, 0, 255); */
             height: 50vh;
         }
         .footer{
-            background-color: darkgray;
+            /* background-color: darkgray; */
             height: 50vh;
         }
 
