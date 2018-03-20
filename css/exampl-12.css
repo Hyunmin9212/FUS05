@@ -140,6 +140,10 @@ body{
     .menu-act{
         transform: translateX(0%);
     }
+    .main .box{
+        min-height: 100px;
+        margin: 1em;
+    }
 }
 /* 모바일 디바이스 */
 @media screen and (min-width:551px) and (max-width:999px){
@@ -163,6 +167,23 @@ body{
         /* background-color: rgb(200, 255, 20); */
         padding: 1em;
         text-transform: uppercase;
+    }
+    /* 모바일 메인 */
+    .main{
+        /* background-color: palegoldenrod; */
+        overflow: hidden;
+    }
+    .box{
+        /* background-color: navy; */
+        float: left;
+        width: 45%;
+        height: 150px;
+        margin: 1em 2.5%;
+        /* 플롯 상태에서는 마진 병합 안됨 */
+    }
+    .box1{
+        /* background-color: mediumspringgreen; */
+         /* 플로트는 다 블록으로 바뀜 플롯 되는순간 부모가 높이를 잊어버림 */
     }
 
 }
@@ -214,10 +235,22 @@ body{
             /* background-color: rgb(226, 226, 226); */
             height: 50vh;
         }
+        /* 데탑 메인 */
         .main{
             /* background-color: rgb(68, 0, 255); */
-            height: 50vh;
+            display: grid;
+            grid-template-areas: 'box box box box';
+            grid-auto-columns: 20%;
+            grid-auto-rows: 150px;
+            justify-content: space-between;
+            grid-row-gap: 20px;
+            padding: 2em 4em;
+
         }
+        .main .box{
+            /* background-color: purple; */
+        }
+        /* 데탑 푸터 */
         .footer{
             /* background-color: darkgray; */
             height: 50vh;
