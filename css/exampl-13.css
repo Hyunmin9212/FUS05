@@ -1,0 +1,38 @@
+@charset "UTF-8";
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;  
+    font: inherit;
+}
+.heading{
+    font-size: 3em;
+}
+.note{
+    background-color: mediumslateblue;
+    width: 800px;
+    /* overflow: hidden; */ /* zoom: 1; 익스플로러 비표준 에서 */
+}
+.note img{
+    width: 200px;
+    height: auto;
+    float: right; /* 부모영역기준으로 배치 */
+    position: relative;
+    right: -50px;
+}
+.clearfix::after{
+    content:"";
+    clear : both;
+    display: block;
+    
+}
+.next{
+    background-color: mediumseagreen;
+    /* margin-top: 50px; */
+    /* clear: both;   = 플로트 해제, 레프트 라이트 보스. 강제마진 추가 . 마진은 병합됨. */
+    margin-top: 50px;
+}
+.next img{
+    float: left;
+}
