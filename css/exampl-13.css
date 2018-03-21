@@ -10,7 +10,7 @@
     font-size: 3em;
 }
 .note{
-    background-color: mediumslateblue;
+    background-color: snow;
     width: 800px;
     /* overflow: hidden; */ /* zoom: 1; 익스플로러 비표준 에서 */
 }
@@ -28,7 +28,7 @@
     
 }
 .next{
-    background-color: mediumseagreen;
+    background-color: whitesmoke;
     /* margin-top: 50px; */
     /* clear: both;   = 플로트 해제, 레프트 라이트 보스. 강제마진 추가 . 마진은 병합됨. */
     margin-top: 50px;
