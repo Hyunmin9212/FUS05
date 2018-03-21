@@ -1,3 +1,14 @@
 .bg-light{
-    background-color: snow) !important;
+    background-color: white !important;
 }
+.h1{
+    font-weight: lighter;
+    padding : 10% 10% 5% 10%;
+}
+.card{
+    margin: 0 auto;
+    width: 80%;
+}
+/* .row .col:nth-child(odd) .card{
+    background-color:black;
+} */
